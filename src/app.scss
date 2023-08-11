@@ -1,0 +1,60 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.App {
+    width: 100vw;
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h1 {
+        font-size: 30px;
+        font-weight: 900;
+        color: violet;
+    }
+    #chat_list_view {
+        width: 100%;
+        height: 80vh;
+        box-shadow: 2px 3px 3px 5px rgb(74, 73, 73);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        #chat_list_view_content {
+            width: 100%;
+            height: 90%;
+            overflow-y: auto;
+            padding: 10px;
+            p {
+                font-size: 20px;
+            }
+        }
+        #chat_arena {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            input {
+                width: 80%;
+                font-size: 25px;
+                outline: none;
+                border: 1px solid black
+            }
+            button {
+                width: 100px;
+                border: 1px solid black;
+                cursor: pointer; 
+                font-size: 25px;
+            }
+        }
+    }
+}
